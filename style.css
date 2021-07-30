@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(233, 47%, 7%);
+  font-size: 15px;
+}
+
+main {
+  margin: 4em;
+  background: hsl(244, 38%, 16%);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+.col-1 {
+  position: relative;
+}
+
+.col-1::after {
+  content: " ";
+  background-color: hsl(277, 64%, 61%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+.col-2 {
+  text-align: center;
+}
+
+h1,
+h3 {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+}
+span {
+  color: hsl(277, 64%, 61%);
+}
+.card {
+  padding: 2em;
+}
+.card > p {
+  padding-top: 1em;
+  line-height: 1.5;
+}
+
+.stat-container > div {
+  padding-top: 1.5em;
+}
+
+@media screen and (min-width: 760px) {
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 10rem 15rem;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  .card > p {
+    padding-top: 1.2em;
+    text-align: left;
+  }
+
+  .col-2 {
+    width: 50%;
+    text-align: left;
+  }
+  .card {
+    padding: 4rem 7rem 2rem 5rem;
+  }
+
+  h1 {
+    text-align: justify;
+  }
+  .stat-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .stat-container > div {
+    padding-top: 4em;
+    padding-right: 1rem;
+  }
+}
